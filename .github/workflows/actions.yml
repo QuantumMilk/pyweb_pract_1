@@ -18,7 +18,7 @@ jobs:
           python-version: 3.12
 
       - name: MkDocs Setup
-      run: pip install mkdocs
+        run: pip install mkdocs
 
       -name: Build
         run: mkdocs build
