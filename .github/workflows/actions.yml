@@ -29,7 +29,7 @@ jobs:
           echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
           echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
-      -name: Deploy
+      - name: Deploy
         run: rsync --archive --stats site/ ${{ secrets.REMOTE_DEST }}
 
 
