@@ -20,7 +20,7 @@ jobs:
       - name: MkDocs Setup
         run: pip install mkdocs
 
-      -name: Build
+      - name: Build
         run: mkdocs build
 
       - name: Install SSH key
